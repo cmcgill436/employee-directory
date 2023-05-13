@@ -1,38 +1,89 @@
+:root {
+  --bilbao: #417505;
+  --supernova: #f6ae36;
+  --cornflower-blue: #4a90e2;
+  --venetian-red: #d0021b;
+  --rusty-nail: #8b572a;
+  --blue-violet: #9013fe;
+}
+
 .App {
+  font-family: sans-serif;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  width: 380px;
+  height: 273px;
+  border: 2px solid black;
   display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.homepage {
+  border: 2px solid;
+}
+
+.header {
+  border: 2px solid var(--cornflower-blue);
+  margin-top: 0;
+  text-align: center;
+  margin-bottom: 0;
+  text-decoration: underline;
+  color: #4a90e2;
+}
+
+input {
+  width: 340px;
+  border: 1px solid #9013fe;
+  /* display: block; */
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 9px 4px 9px 40px;
+  background: transparent
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E")
+    no-repeat 13px center;
 }
 
-.App-link {
-  color: #61dafb;
+.employee-list {
+  border: 2px solid var(--cornflower-blue);
+  overflow: scroll;
+  height: 75vh;
+  background-color: var(--supernova);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.test {
+  border: 1px solid var(--venetian-red);
+}
+
+/* .profile,
+.empPic {
+  display: flex;
+  justify-content: space-around;
+  width: 100px;
+  height: 100px;
+} */
+
+h6 {
+  border: 2px solid rgb(145, 137, 137);
+  height: 37px;
+  margin: 0;
+  padding: 8px;
+}
+.empPic {
+  width: 20%;
+}
+
+.header2 {
+  text-align: center;
+  border: 2px solid var(--cornflower-blue);
+  margin-top: 0;
+}
+
+.employeepg {
+  border: 2px solid var(--rusty-nail);
+  height: 268px;
+}
+
+.pic {
+  width: 10%;
 }
