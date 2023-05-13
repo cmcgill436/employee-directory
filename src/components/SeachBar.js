@@ -1,8 +1,8 @@
 export default function SearchBar() {
   return (
     <div>
-      <form class="nosubmit">
-        <input class="nosubmit" type="search" placeholder="Search..." />
+      <form className="nosubmit">
+        <input className="nosubmit" type="search" placeholder="Search..." />
       </form>
     </div>
   );

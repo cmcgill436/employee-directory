@@ -4,13 +4,13 @@ import { useParams } from "react-router-dom";
 export default function EmployeeListItem(props) {
   const { id } = useParams();
 
-  console.log(employeeArr, "I am here");
+  // console.log(employeeArr, "I am here");
 
   const result = employeeArr.find(
     (employee, index) => index === parseInt(id - 1)
   );
-  console.log(result.img);
-  console.log(typeof result.img);
+  // console.log(result.img);
+  // console.log(typeof result.img);
 
   // Check if `result` exists
   if (!result) {
@@ -20,7 +20,7 @@ export default function EmployeeListItem(props) {
   return (
     <div className="employees">
       <div>
-        <img className="empPic" src={result.img} alt={result.name} />
+        <img className="empPic" src={`/${result.img}`} alt={result.name} />
         <div>
           <h2>{result.name}</h2>
           <h3> {result.role}</h3>

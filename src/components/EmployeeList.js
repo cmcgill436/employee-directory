@@ -63,11 +63,11 @@ export const employeeArr = [
   },
 ];
 
-const employeeList = employeeArr.map((employee) => {
+const employeeList = employeeArr.map((employee, index) => {
   const { name, id, img } = employee;
 
   return (
-    <Link to={`/employee/${id}`} className="list">
+    <Link key={index} to={`/employee/${id}`} className="list">
       <img className="pic" src={img} alt={name} />
       <h2>{name}</h2>
     </Link>
